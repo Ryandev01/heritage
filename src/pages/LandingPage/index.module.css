@@ -1,0 +1,13 @@
+.custom-search-field .search-field > form > div {
+  width: fit-content;
+}
+
+.custom-search-field {
+    width: fit-content;
+    /* margin-bottom: 2em c!important; */
+    margin-bottom: 80px !important;
+}
+
+.custom-search-field.landing-page-search-field {
+    width: 45ch;
+}

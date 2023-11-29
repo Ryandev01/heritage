@@ -1,0 +1,47 @@
+.landing-page {
+  align-items: flex-start;
+  background-color: #f9f7f2;
+  border: 1px none;
+  display: flex;
+  width: 100%;
+}
+
+.landing-page .search-field > form > div {
+  width: 30vw;
+}
+.roboto-light-merino-50px {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #f3efe5;
+}
+.roboto-light-no-line-height-merino-50px {
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 300;
+  /* line-height: 24px; */
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #f3efe5;
+}
+.roboto-medium-merino-20px {
+  font-family: Roboto;
+  font-size: 20;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #f3efe580;
+}
+.roboto-medium-no-line-height-merino-20px {
+  font-family: Roboto;
+  font-size: 20;
+  font-weight: 500;
+  /* line-height: 24px; */
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #f3efe580;
+}

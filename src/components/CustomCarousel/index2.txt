@@ -1,0 +1,80 @@
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import { usePaginatedArray } from '../../hooks/usePaginatedArray';
+import { Box } from '@mui/material';
+import styles from './index.module.css'
+import NextArrow from '../../assets/images/searchResults/next-arrow.svg';
+import PrevArrow from '../../assets/images/searchResults/prev-arrow.svg';
+import styled from 'styled-components';
+import IconButton from '@mui/material/IconButton';
+
+const CarouselComponent = () => {
+    const {
+        data,
+        hasMoreData,
+        fetchData
+    } = usePaginatedArray({
+        apiUrl: 'https://jsonplaceholder.typicode.com/photos',
+        step: 10
+    })
+
+    const temp = () => { }
+
+    type typeFn = ((clickHandler: () => void, hasPrev: boolean, label: string) => React.ReactNode) | undefined
+
+    const CustomPrevArrow: typeFn = (clickHandler, bool, label ) => {
+        return <>
+        <IconButton aria-label="prev" className={`${styles['prev-arrow']}`}>
+            <Box component="div" component="img" alt={""} src={PrevArrow} />
+        </IconButton>
+    </>
+    }
+
+    return (<>
+        <Box component="div" className={`custom-carousel-wrapper ${styles['custom-carousel-wrapper']}`} style={{
+            position: 'relative'
+        }}>
+            <Carousel
+
+                renderArrowPrev={() => <CustomPrevArrow
+                    clickHandler = {temp}
+                    hasMoreData
+                />}
+            >
+                {
+                    data?.map((item: any, index: number) => (
+                        <>
+                            <Box component="div" key={index}>
+                                <Box component="div" className={`${styles['']}`} component="img" alt={""} src={item.thumbnailUrl} />
+                                <p className="legend">{item.title}</p>
+                            </Box>
+                        </>
+                    ))
+                }
+                {/* <div>
+                <img src="assets/1.jpeg" />
+                <p className="legend">Legend 1</p>
+            </div>
+            <div>
+                <img src="assets/2.jpeg" />
+                <p className="legend">Legend 2</p>
+            </div>
+            <div>
+                <img src="assets/3.jpeg" />
+                <p className="legend">Legend 3</p>
+            </div> */}
+            </Carousel>
+        </Box>
+    </>);
+};
+
+export const CustomCarousel = styled(CarouselComponent)`
+    .MuiBox-root {
+        z-index: -20;
+    }
+    .custom-carousel-wrapper .carousel img {
+        width: fit-content !important;
+    }
+`

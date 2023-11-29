@@ -1,0 +1,13 @@
+:root { 
+  --black: #000000;
+  --licorice: #13100d;
+  --licorice-2: #13100d80;
+  --white: #ffffff;
+ 
+  --font-size-l: 30px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+  --font-size-xs: 12px;
+ 
+  --font-family-roboto: "Roboto", Helvetica;
+}

@@ -1,0 +1,12 @@
+.dialog-wrapper {
+    background: rgba(19, 16, 13, 0.9);
+}
+.modal-header {
+    font-family: 'Roboto-Regular';
+    margin-top: 1em;
+    padding-inline: 1em;
+}
+.content {
+    width: 100%;
+    height: 100%;
+}

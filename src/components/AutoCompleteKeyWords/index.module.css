@@ -1,0 +1,22 @@
+.dropdown {
+    border-radius: 0.3em !important;
+    border: 1.2px solid var( --matched-border-color-for-input);
+    padding-top: 6px;
+    padding: 0.6em 1em;
+    line-height: 1.2;
+}
+
+.dropdown:hover {
+    border-color: #000;
+}
+.dropdown:focus {
+    border: 1.5px solid blue;
+}
+
+.dropdown::placeholder {
+    color: var(--medium-gray);
+}
+
+.extra-width {
+    flex-grow: 1;
+}

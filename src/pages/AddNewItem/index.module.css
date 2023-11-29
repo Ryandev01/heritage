@@ -1,0 +1,28 @@
+.tab-name-tile-row {
+    gap: 2em;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.tab-name-tile {
+    text-align: center;
+    padding-block: 1em;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.tab-name-tile> img {
+    /* Image */
+    margin-bottom: 0.5em;
+    width: 28%;
+    aspect-ratio: 1/1;
+    min-width: 20px;
+    max-width: 30px;
+}
+
+.tab-name-tile> div {
+    width: fit-content;
+    margin-inline: auto;
+    font-size: 1em;
+    font-weight: bold;
+}

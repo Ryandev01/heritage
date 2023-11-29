@@ -1,0 +1,42 @@
+.container {
+    font-family: 'Roboto-Regular';
+}
+
+.container [aria-label="Close"] {
+    color: #000 ;
+    font-family: 'Roboto-Regular';
+}
+
+.input-field,
+.role-dropdown ,
+.status-dropdown {
+    padding-block: 0.7em;
+}
+
+.role-dropdown ,
+.status-dropdown {
+    padding-block: 10px;
+}
+
+.input-field > form > div {
+    width: 100%;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.disclaimer {
+    margin-top: 1em;
+}
+
+.role-dropdown > div ,
+.status-dropdown > div {
+    width: 100%;
+}
+
+.role-dropdown > div > div > div:nth-child(1) ,
+.status-dropdown > div > div > div:nth-child(1) {
+    padding: 10px;
+}

@@ -1,0 +1,15 @@
+.modal-title {
+    font-size: 25px;
+}
+
+.more-menu-div {
+    width: fit-content;
+    height: fit-content;
+}
+
+@media (min-width: 575px) and (max-width: 1025px) {
+    .modal-title {
+        font-size: 1.2em;
+    }
+    
+}

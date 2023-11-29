@@ -1,0 +1,88 @@
+.card-container {
+    cursor: pointer;
+}
+.left-grid-container {
+    gap: 1em;
+    max-height: 79vh;
+    overflow-y: scroll;
+}
+.card-grid-item {
+    width: 100%;
+}
+.card-grid {
+    justify-content: center;
+    font-family: 'Roboto-Regular';
+    position: relative;
+    padding-inline: 0.5em;
+    gap: 0.8em;
+}
+
+.card-image-wrapper > div:has(iframe) {
+    width: 100%;
+    aspect-ratio: 3/1.8;
+}
+
+.content ,
+.content.MuiGrid-root {
+    text-align: left;
+    display: flex;
+    flex-direction: column !important;
+
+    padding: 0;
+    justify-content: flex-start;
+    position: relative;
+    gap: 0.5em;
+}
+
+.card-title {
+    font-size: clamp(18px, 1.4vw, 38px);
+    line-height: 1;
+    font-weight: bold;
+    max-width: 96%;
+    margin-left: 0;
+}
+
+.card-subtitle {
+    font-size: clamp(14px, 0.9vw, 18px);
+    line-height: 1;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-image-wrapper {
+    display: flex;
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.card-new-flag {
+    color: #fff;
+    font-size: clamp(14px, 1vw, 18px);
+    background-color: var(--clr-gold);
+    border-radius: 11px;
+    padding: 0.5em 10px;
+    width: fit-content;
+}
+
+.more-icon-span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+@media (min-width: 575px) and (max-width: 1025px) {
+    .left-grid-container {
+        max-height: 77vh;
+    }
+    .card-grid {
+        gap: 5px;
+    }
+}

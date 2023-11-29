@@ -1,0 +1,224 @@
+.bgImg {
+  float: left;
+  width: 100%;
+  background-size: cover;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+}
+
+.sideGrid {
+  position: relative;
+}
+
+.content {
+  position: relative;
+  top: -10px;
+}
+
+.content legend  span{
+ padding-left: 0;
+ padding-right: 0;
+ text-align: left;
+ width: fit-content;
+}
+
+.logo {
+  position: absolute;
+  bottom: 15%;
+  width: 72px;
+  height: 93px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.loginContainer {
+  background: #F9F7F2;
+  margin-left: 0 !important;
+}
+
+.loginContainer .contentContainer {
+  height: 100vh;
+}
+
+.header {
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  max-width: 23ch;
+  text-align: left;
+}
+
+.subHeader {
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #13100D;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.password,
+.confirm-password {
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.password >form >div > div,
+.confirm-password >form >div > div {
+  background-color: #fff;
+  font-size: 16px;
+  border-color: #E8E9E9;
+  border-radius: 4px;
+  color: var(--focused-black-text);
+}
+
+.password >form > div:hover,
+.confirm-password >form > div:hover {
+  background-color: transparent;
+}
+
+.password >form >div > div::placeholder,
+.confirm-password >form >div > div::placeholder {
+  color: var(--grey-text);
+  line-height: 1.5;
+}
+
+.password>form >div > div,
+.confirm-password>form >div > div {
+  height: 100%;
+}
+
+.password >form >div ,
+.confirm-password >form >div  {
+  width: 100%;
+  height: 100%;
+}
+
+.password >form >div >label,
+.confirm-password >form >div >label {
+  font-size: 14px;
+  line-height: 24px;
+  top: auto;
+  bottom: 40%;
+  cursor: text
+  
+}
+.password >form >div >label[data-shrink="false"],
+.confirm-password >form >div >label[data-shrink="false"] {
+  color: var(--focused-black-text);
+  margin-inline: 0;
+  width: fit-content;
+  padding-inline: 3px;
+  padding-block: 0;
+  background-color: #fff;
+}
+.password >form >div> p,
+.confirm-password >form >div> p {
+  margin-left: 0;
+}
+
+.password >form >div >label[data-shrink="true"],
+.confirm-password >form >div >label[data-shrink="true"] {
+  bottom: initial;
+}
+
+.sign-in-btn.MuiButtonBase-root {
+  padding: 1vw 2vw;
+  margin-top: 1vw;
+  cursor: pointer;
+}
+
+.bottomText {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  margin: 1vw;
+}
+
+.bottomText p {
+  font-size: 14px;
+  line-height: 24px;
+  line-height: 1.2;
+  color: var(--grey-text);
+  font-family: 'Roboto-Regular';
+  margin-block: 5px;
+}
+
+.bottomText p span a {
+  color: #000;
+}
+
+.bottomText p span a:hover {
+  color: blue;
+}
+
+.password-help-title {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+.password-help-section {
+  font-family: 'Roboto-Regular';
+  color: var(--table-black-text);
+  margin-bottom: 0.5em;
+}
+
+.validate-statement-row {
+  display: flex;
+  gap: 0.5em;
+}
+
+.expired-link-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  font-family: 'Roboto-Regular';
+  text-align: left;
+}
+
+.expired-link-content div:nth-child(1) {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.expired-link-content div:nth-child(2) {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (min-width: 575px) and (max-width: 1025px) {
+  .sideGrid.MuiGrid-root {
+    max-width: 40vw;
+  }
+
+  .content {
+    position: relative;
+    top: -5vw;
+  }
+
+  .loginContainer .contentContainer {
+    margin-inline: auto;
+  }
+
+  .bottomText {
+    margin: 4vw;
+  }
+
+  .sign-in-btn.MuiButtonBase-root {
+    padding: 1vw 3.5vw;
+  }
+
+}

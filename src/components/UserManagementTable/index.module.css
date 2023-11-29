@@ -1,0 +1,56 @@
+.table-container {
+    background-color: transparent;
+}
+
+.add-user-btn {
+    margin-left: auto;
+    width: fit-content;
+}
+
+.add-user-btn button {
+    line-height: 2;
+}
+
+.custom-search {
+    width: 50ch;
+}
+
+.search-title {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-align: left;
+    color: #13100D80;
+    /* padding-bottom: 30px; */
+}
+
+.custom-search-field,
+.custom-search-field >form > div {
+    width: 100%;
+}
+
+.table-container .ant-table-column-sorter-inner {
+    content: \2794;
+    display: none;
+}
+
+.copy-icon {
+    font-size: 14px !important;
+}
+.recovery-button button {
+    background-color: transparent !important;
+    color: rgb(14 13 13)!important;
+    width: 175px;
+    border: 1px solid #D7D7D8;
+    border-radius: 100px;
+    padding-block: 0 !important;
+    height: 2.2em;
+    padding-inline: 10px;
+}
+
+.recovery-button button:hover {
+    color: gray;
+    opacity: 0.5;
+}

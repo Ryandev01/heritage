@@ -1,0 +1,145 @@
+.add-new-item-container {
+    padding: 1em 1em 1em 2em;
+    min-width: 45ch;
+    max-width: 50ch;
+    font-family: 'Roboto-Regular';
+    min-height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.unique-id {
+    font-family: Roboto;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+text-align: left;
+color: #13100D80;
+}
+.hide-btn {
+    margin-bottom: 5vw;
+}
+
+.add-title {
+    margin-bottom: 0.5em !important;
+}
+
+.content-section {
+    position: relative;
+    bottom: 0;
+}
+
+.form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.btn-row {
+    margin-top: 0.5em;
+}
+
+.stepper {
+    max-width: 60%;
+    margin-inline: auto;
+}
+.stepper.media-stepper {
+    max-width: 100%;
+}
+.stepper.add-media-stepper {
+    max-width: 100%;
+}
+
+.step-label > span:nth-child(2) span {
+    margin-top: 0.3em !important;
+}
+
+.date {
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 0.5em 0.7em;
+    border-radius: 0.3em;
+    height: 100%;
+    width: 100%;
+}
+
+.form-error {
+    color: red;
+    margin-top: 1em;
+}
+
+.visit-count {
+    color: var(--grey-text);
+    margin-top: 1em;
+}
+
+.file-upload-url-bottom-text {
+    /* position: absolute; */
+    /* width: 262px; */
+    height: 11px;
+    /* top: 642px; */
+    cursor: pointer;
+    /* Notes 14px Gray */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.5px;
+
+    /* Black 50% */
+    color: black!important;
+    text-align: center!important;
+}
+
+.embed-submit-button {
+    align-self: center!important;
+}
+.embed-box,
+.video-box {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+    border: 1px solid #E8E9E9
+}
+
+.video-box iframe {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.embed-box iframe ,
+.embed-box video {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.file-upload-url-text {
+    height: 11px;
+    cursor: pointer;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.5px;
+
+    /* Black 50% */
+    color: black!important;
+    text-align: center!important;
+}
+
+.no-preview-url {
+    /* background: #13100D80; */
+    aspect-ratio: 3/2;
+    width: 100%;
+    height: 100%;
+}

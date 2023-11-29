@@ -1,0 +1,121 @@
+.refined-inputs-container {
+    padding-bottom: 1em;
+    display: flex;
+    gap: 0.5em;
+    padding-inline: 2em;
+    flex-wrap: wrap;
+    justify-content: start;
+    font-family: 'Roboto-Regular';
+    min-width: 98vw;
+    --width-constant: 23ch;
+}
+
+.black-90-pct {
+    color: var(--black-90-pct)
+}
+.refined-inputs-grid {
+    gap: 5px;
+    justify-content: start;
+}
+.input-field {
+    flex-grow: 1;
+    border-color: var(--lightest-border);
+    cursor: pointer;
+}
+.dropdown {
+    border-radius: 0.3em !important;
+}
+
+.dropdown ,
+.dropdown::placeholder {
+    border: 0;
+}
+
+.extra-width {
+    flex-grow: 1;
+}
+
+.date-grid-item {
+    max-width: var(--width-constant) !important;
+
+}
+
+.location-grid-item {
+}
+
+.date {
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0.5em 0.7em;
+    border-radius: 0.3em;
+    width: 100%;
+    
+    height: 40px;
+    border: 1.2px solid var( --matched-border-color-for-input);
+    padding-top: 6px;
+    line-height: 1.2;
+}
+
+.date-popup-container {
+    gap: 2px;
+}
+
+.date-subinput.date {
+    padding-inline: 0.5em;
+}
+.date-subinput.date {
+    font-size: 0.9em;
+}
+.date-input-box::placeholder ,
+.date-subinput.date::placeholder {
+    font-size: initial;
+}
+
+.date-popup-grid-item {
+    max-width: 49% !important;
+   flex-basis: 49% !important;
+}
+
+.date::placeholder {
+    color: var(--medium-gray);
+}
+
+.location-popup-relative-wrapper {
+    position: relative;
+}
+.location-popup-container,
+.date-popup-container {
+    position: relative;
+    margin-top: 0.5em;
+    border-radius: 10px;
+}
+
+.location-popup-close {
+    position: absolute;
+    top: -15%;
+    right: -3%;
+    z-index: 33;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (min-width: 1200px) {
+    .input-field {
+        --width-constant: 21ch;
+        max-width: var(--width-constant)  !important;
+        flex-basis: var(--width-constant) !important;
+        flex-shrink: 0;
+    }
+    .input-field.date-input-field {
+        max-width: calc(1.2 * var(--width-constant))  !important;
+        flex-basis: calc(1.2 * var(--width-constant)) !important;
+    }
+
+}
+@media (min-width: 575px) and (max-width: 1025px) {
+    .input-field {
+        --width-constant: 25ch;
+    }
+    .location-grid-item {
+        /* min-width: 40vw !important; */
+    }
+}

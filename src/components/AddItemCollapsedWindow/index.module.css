@@ -1,0 +1,23 @@
+.wrapper {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 10px 30px;
+    height: fit-content;
+    font-family: 'Roboto-Regular';
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 4px 4px 0px 0px;
+    z-index: var(--max-z-index);
+}
+
+.gold {
+    color: var(--clr-gold);
+    display: inline-block;
+}
+
+.container {
+    gap: clamp(20px, 10vw, 50px);
+    align-items: center;
+    justify-content: space-between;
+}

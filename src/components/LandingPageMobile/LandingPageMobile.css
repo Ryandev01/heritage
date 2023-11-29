@@ -1,0 +1,10 @@
+.landing-page-mobile {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--licorice);
+  display: flex;
+  position: relative;
+  width: 834px;
+}
+

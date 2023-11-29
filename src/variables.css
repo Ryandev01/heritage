@@ -1,0 +1,26 @@
+:root {
+  --grey-text: rgba(19, 16, 13, 0.5);
+  --focused-black-text: #49454F;
+  --off-white-background-color: #f9f7f2;
+  --user-table-border: #E7E7E7;
+  --user-table-cell-hover-bg: #F3EFE5;
+  --table-black-text: #13100D;
+  --max-z-index: 99;
+  --z-index-2: 98;
+  --z-index-3: 97;
+  --clr-gold: #EBC03F;
+  --container-spacing: 2em;
+  --light-grey-border: #D7D7D8;
+  --pill-back-color: #49454F;
+  --search-bar-bg-color: rgba(243, 239, 229, 0.5);
+  --black-90-pct: rgba(19, 16, 13, 0.9);
+  --lightest-border : #E8E9E9;
+  --medium-gray: #787878;
+  --no-map-bg: #272625;
+  --no-map-text: #525252;
+  --snackbar-green: #006B44;
+  --blank-doc-bg: #51504F;
+  --orange-shade: #E0403F;
+  --matched-border-color-for-input: #c9c9c9;
+  --mui-blue-border: #1976d2;
+}

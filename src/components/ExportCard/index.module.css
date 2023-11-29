@@ -1,0 +1,30 @@
+.content-box{
+    border: 1px solid #D7D7D8;
+    width: 751px;
+    height: 100px;
+}
+
+.box-heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(19, 16, 13, 0.9);
+}
+.box-span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: rgba(19, 16, 13, 0.5);
+}
+.grid-one {
+    text-align: start;
+}
+.grid-two {
+    text-align: end;
+}

@@ -1,0 +1,189 @@
+.bgImg {
+    float: left;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}
+
+.sideGrid {
+    position: relative;
+}
+
+.content {
+    position: relative;
+    top: -10px;
+}
+
+.content legend span {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    width: fit-content;
+}
+
+.logo {
+    position: absolute;
+    bottom: 15%;
+    width: 72px;
+    height: 93px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.loginContainer {
+    background: #F9F7F2;
+    margin-left: 0 !important;
+}
+
+.loginContainer .contentContainer {
+    height: 100vh;
+}
+
+.header {
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    max-width: 23ch;
+    text-align: left;
+}
+
+.subHeader {
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #13100D;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.MuiGrid-root.login-email,
+.MuiGrid-root.login-pwd {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.MuiGrid-root.login-email .MuiInputBase-root,
+.MuiGrid-root.login-pwd .MuiInputBase-root {
+    background-color: #fff;
+    font-size: 16px;
+    border-color: #E8E9E9;
+    border-radius: 4px;
+    color: var(--focused-black-text);
+}
+
+.MuiGrid-root.login-email .MuiFormControl-root:hover,
+.MuiGrid-root.login-pwd .MuiFormControl-root:hover {
+    background-color: transparent;
+}
+
+.MuiGrid-root.login-email .MuiInputBase-root::placeholder,
+.MuiGrid-root.login-pwd .MuiInputBase-root::placeholder {
+    color: var(--grey-text);
+    line-height: 1.5;
+}
+
+.MuiGrid-root.login-email .MuiInputBase-input,
+.MuiGrid-root.login-pwd .MuiInputBase-input {
+    height: 100%;
+}
+
+.MuiGrid-root.login-email .MuiFormControl-root,
+.MuiGrid-root.login-pwd .MuiFormControl-root {
+    width: 100%;
+    height: 100%;
+}
+
+.MuiGrid-root.login-email .MuiFormLabel-root,
+.MuiGrid-root.login-pwd .MuiFormLabel-root {
+    font-size: 14px;
+    line-height: 24px;
+    top: auto;
+    bottom: 40%;
+    cursor: text
+}
+
+.MuiGrid-root.login-email .MuiFormLabel-root[data-shrink="true"],
+.MuiGrid-root.login-pwd .MuiFormLabel-root[data-shrink="true"] {
+    color: var(--focused-black-text);
+    margin-inline: 0;
+    width: fit-content;
+    padding-inline: 3px;
+    padding-block: 0;
+    background-color: #fff;
+}
+
+.MuiGrid-root.login-email .Mui-error,
+.MuiGrid-root.login-pwd .Mui-error {
+    margin-left: 0;
+}
+
+.MuiGrid-root.login-email:has(.MuiFormHelperText-root) .MuiFormLabel-root,
+.MuiGrid-root.login-pwd:has(.MuiFormHelperText-root) .MuiFormLabel-root {
+    bottom: initial;
+}
+
+.sign-in-btn.MuiButtonBase-root {
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+}
+
+.bottomText {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin: 1vw;
+}
+
+.bottomText p {
+    font-size: 14px;
+    line-height: 24px;
+    line-height: 1.2;
+    color: var(--grey-text);
+    font-family: 'Roboto-Regular';
+    margin-block: 5px;
+}
+
+.bottomText p span a {
+    color: #000;
+}
+
+.bottomText p span a:hover {
+    color: blue;
+}
+
+@media (min-width: 575px) and (max-width: 1025px) {
+    .sideGrid.MuiGrid-root {
+        max-width: 40vw;
+    }
+
+    .content {
+        position: relative;
+        top: -5vw;
+    }
+
+    .loginContainer .contentContainer {
+        margin-inline: auto;
+    }
+
+    .bottomText {
+        margin: 4vw;
+    }
+
+    .sign-in-btn.MuiButtonBase-root {
+        padding: 1vw 3.5vw;
+    }
+
+}

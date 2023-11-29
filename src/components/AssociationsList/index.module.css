@@ -1,0 +1,27 @@
+.inventory-item {
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.container {
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+} 
+
+.right-container {
+    align-items: center;
+    gap: 1em;
+}
+
+.list > div {
+    margin-block: 0.6em;
+}
+
+.added-places {
+    margin-block: 0.6em;
+}
+
+.title {
+    font-weight: bold;
+}

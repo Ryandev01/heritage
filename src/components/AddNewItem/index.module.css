@@ -1,0 +1,48 @@
+.add-new-item-container {
+    padding: 1em 2em;
+    min-width: 45ch;
+    font-family: 'Roboto-Regular';
+    min-height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hide-btn {
+    margin-bottom: 5vw;
+}
+
+.add-title {
+    margin-bottom: 0.5em !important;
+}
+
+.content-section {
+    position: relative;
+    bottom: 0;
+}
+
+.form {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.btn-row {
+    margin-top: 1em;
+}
+
+.site-description {
+    /* margin-bottom: 4.5em; */
+}
+.stepper {
+    max-width: 60%;
+    margin-inline: auto;
+}
+.stepper.add-media-stepper {
+    max-width: 100%;
+}
+
+.step-label > span:nth-child(2) span {
+    margin-top: 0.3em !important;
+}

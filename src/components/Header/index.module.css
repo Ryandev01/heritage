@@ -1,0 +1,36 @@
+.header-container {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 100px;
+    z-index: var(--z-index-3);
+}
+
+.logo {
+    width: 15vw;
+    padding: 1em 2em;
+    text-align: left;
+    cursor: pointer;
+}
+.header-lhs-content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+@media (min-width: 575px) and (max-width: 1025px) {
+    .logo {
+        width: fit-content;
+        padding-right: 1em;
+    }
+    .header-search {
+        width: 35ch;
+    }
+    .header-refined-search button {
+        font-size: 14px;
+    }
+
+    .header-container {
+        width: 100vw;
+    }
+}

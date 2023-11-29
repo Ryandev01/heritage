@@ -1,0 +1,29 @@
+.content-section {
+    background-color: var(--off-white-background-color);
+    padding-top: 100px;
+    height: 100%;
+}
+
+.section-heading {
+    /* position: absolute;
+    left: 32.92%;
+    right: 32.85%;
+    top: 15.47%;
+    bottom: 80.02%; */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgba(19, 16, 13, 0.5);
+}
+
+.section-card {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
